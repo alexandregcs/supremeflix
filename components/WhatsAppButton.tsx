@@ -1,5 +1,5 @@
 import { CirclePlay } from "lucide-react";
-import { WHATSAPP_URL } from "@/lib/site";
+import { TrackedWhatsAppLink } from "./TrackedWhatsAppLink";
 
 type WhatsAppButtonProps = {
   children: React.ReactNode;
@@ -18,9 +18,9 @@ export function WhatsAppButton({
       : "primary-button";
 
   return (
-    <a href={WHATSAPP_URL} target="_blank" rel="noreferrer" className={`${base} ${className}`}>
+    <TrackedWhatsAppLink className={`${base} ${className}`}>
       <CirclePlay className="h-4 w-4" aria-hidden="true" />
       {children}
-    </a>
+    </TrackedWhatsAppLink>
   );
 }

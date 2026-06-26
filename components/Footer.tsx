@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { footerLegal, navItems } from "@/lib/site";
+import { TrackedWhatsAppLink } from "./TrackedWhatsAppLink";
 
 export function Footer() {
   return (
@@ -35,9 +36,9 @@ export function Footer() {
             <h3 className="text-sm font-extrabold text-white">Contato</h3>
             <div className="mt-4 flex flex-col gap-2.5 text-[13px] font-semibold text-slate-400">
               <p>WhatsApp: (24) 98139-9104</p>
-              <a href="#planos" className="transition hover:text-white">
+              <TrackedWhatsAppLink className="transition hover:text-white">
                 Falar pelo WhatsApp
-              </a>
+              </TrackedWhatsAppLink>
               <a href="#privacidade" className="transition hover:text-white">
                 Política de Privacidade
               </a>
