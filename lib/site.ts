@@ -115,17 +115,17 @@ export const planFeatures = [
 export const plans = [
   {
     name: "Mensal",
-    price: "29,90",
+    price: "19,90",
     period: "/mês",
   },
   {
     name: "Trimestral",
-    price: "69,90",
+    price: "54,90",
     period: "/trimestre",
   },
   {
     name: "Semestral",
-    price: "119,90",
+    price: "99,90",
     period: "/semestre",
     badge: "Mais escolhido",
     highlighted: true,
